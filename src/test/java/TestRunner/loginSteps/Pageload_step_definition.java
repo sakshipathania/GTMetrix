@@ -1318,7 +1318,7 @@ public static String actualTitle;
 	}
 // write get text value in excel sheet
 public void putDataInExcel(int row) throws Exception {
-	File src = new File("C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\LoadTest.xlsx");
+	File src = new File("C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\LoadTest.xlsx");
 	String cellValue[] = {location, speedtime};
 	int count = 0;
 	FileInputStream fis = new FileInputStream(src);
