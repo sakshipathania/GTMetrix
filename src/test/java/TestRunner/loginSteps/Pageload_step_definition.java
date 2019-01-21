@@ -1318,7 +1318,7 @@ public static String actualTitle;
 	}
 // write get text value in excel sheet
 public void putDataInExcel(int row) throws Exception {
-	File src = new File("C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\LoadTest.xlsx");
+	File src = new File("C:\\Users\\Administrator\\.jenkins\\workspace\\Test Slideteam Loaded Time\\LoadTest.xlsx");
 	String cellValue[] = {location, speedtime};
 	int count = 0;
 	FileInputStream fis = new FileInputStream(src);
@@ -1382,7 +1382,7 @@ public void putDataInExcel(int row) throws Exception {
 
 //Write get text in txt folder
 public void setDataFromFile(String speeed) {
-	File file = new File("C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\Write.txt");
+	File file = new File("C:\\Users\\Administrator\\.jenkins\\workspace\\Test Slideteam Loaded Time\\Write.txt");
 	BufferedReader br;
 	try {
 		br = new BufferedReader(new FileReader(file));
