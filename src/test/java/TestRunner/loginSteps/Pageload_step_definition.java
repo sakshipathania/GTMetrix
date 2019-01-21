@@ -185,7 +185,7 @@ public static String actualTitle;
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// Now you can do whatever you need to do with it, for example copy somewhere
 		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-reporthome\\canada.png"));
+				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\home\\canada.png"));
 		Thread.sleep(500);
 		System.err.println("Get Current location from the home page= " + location);
 		System.err.println("HOME PAGE Loaded TIME for= " + speedtime);
@@ -1318,7 +1318,7 @@ public static String actualTitle;
 	}
 // write get text value in excel sheet
 public void putDataInExcel(int row) throws Exception {
-	File src = new File("C:\\Users\\Administrator\\.jenkins\\workspace\\Test Slideteam Loaded Time\\LoadTest.xlsx");
+	File src = new File("C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\LoadTest.xlsx");
 	String cellValue[] = {location, speedtime};
 	int count = 0;
 	FileInputStream fis = new FileInputStream(src);
