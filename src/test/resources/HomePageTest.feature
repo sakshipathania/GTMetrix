@@ -17,14 +17,14 @@ Scenario Outline:
 		|URL                  | 
 		|https://slideteam.net|     	
 		
-@loadatestonDalls(USA) 
+@loadatestonSanAntonio(USA) 
 Scenario Outline: 
 	Given Navigate to the website url. 
 	Then Fills the Analyze Performance of app "<URL>". 
 	Then Select the USA country. 
 	Then click on Analyze cta. 
 	Then Get fully loaded Time,location and title URL. 
-	Then After Analyze the app see result for Dallas, USA. 
+	Then After Analyze the app see result for San Antonio, USA. 
 	Then write location in excelsheet. 
 	Examples: 
 		|URL                  | 
@@ -63,43 +63,41 @@ Scenario Outline:
 #		|URL                  | 
 #		|https://www.slideteam.net/free-business-powerpoint-templates|   		
 #		
-#	Scenario Outline: 
+#	    Scenario Outline: 
 #		Given Navigate to the website url. 
 #		Then Fills the Analyze Performance of app "<URL>". 
 #		Then Select the USA country. 
 #		Then click on Analyze cta. 
 #		Then Get fully loaded Time,location and title URL. 
-#		Then After Analyze the smaple free app see result for Dallas, USA. 
+#		Then After Analyze the smaple free app see result for San Anotonio, USA. 
 #		Then Sample page location and loaded time for USA country. 
 #		Examples: 
 #		   |URL                                                         | 
-#		   |https://www.slideteam.net/free-business-powerpoint-templates|  	
-
-#		
-#	Scenario Outline: 
-#		Given Navigate to the website url. 
-#		Then Fills the Analyze Performance of app "<URL>". 
-#		Then Select India country. 
-#		Then click on Analyze cta. 
-#		Then Get fully loaded Time,location and title URL. 
-#		Then After Analyze the smaple free app see result for Mumbai, India. 
-#		Then Sample page location and loaded time for India country. 
-#		Examples: 
-#			|URL                  | 
-#			|https://www.slideteam.net/free-business-powerpoint-templates| 
+#		   |https://www.slideteam.net/free-business-powerpoint-templates|  			
+#	                    Scenario Outline: 
+#		             Given Navigate to the website url. 
+#		             Then Fills the Analyze Performance of app "<URL>". 
+#		             Then Select India country. 
+#		             Then click on Analyze cta. 
+#		             Then Get fully loaded Time,location and title URL. 
+#		             Then After Analyze the smaple free app see result for Mumbai, India. 
+#		             Then Sample page location and loaded time for India country. 
+#		              Examples: 
+#			       |URL                  | 
+#			        |https://www.slideteam.net/free-business-powerpoint-templates| 
 																			
 #	#share-and-download-products load test
 #@samplePageload 
-#Scenario Outline: 
-#	Given Navigate to the website url. 
-#	Then Fills the Analyze Performance of app "<URL>". 
-#	Then click on Analyze cta. 
-#	Then Get fully loaded Time,location and title URL. 
-#	Then After Analyze the share and download app see result for Vancouver, Canada. 
-#	Then Share and download page location and loaded time for Canada country. 
-#	Examples: 
-#		|URL                  | 
-#		|https://www.slideteam.net/share-and-download-products|   		
+#              Scenario Outline: 
+#	        Given Navigate to the website url. 
+#	        Then Fills the Analyze Performance of app "<URL>". 
+#	        Then click on Analyze cta. 
+#	        Then Get fully loaded Time,location and title URL. 
+#	        Then After Analyze the share and download app see result for Vancouver, Canada. 
+#	        Then Share and download page location and loaded time for Canada country. 
+#	         Examples: 
+#		      |URL                  | 
+#		      |https://www.slideteam.net/share-and-download-products|   		
 #		
 #	Scenario Outline: 
 #		Given Navigate to the website url. 
@@ -107,7 +105,7 @@ Scenario Outline:
 #		Then Select the USA country. 
 #		Then click on Analyze cta. 
 #		Then Get fully loaded Time,location and title URL. 
-#		Then After Analyze the share and download app see result for Dallas, USA. 
+#		Then After Analyze the share and download app see result for San Anotonio, USA. 
 #		Then Share and download page location and loaded time for USA country. 
 #		Examples: 
 #			|URL                                                  | 
@@ -137,14 +135,14 @@ Scenario Outline:
 #	Examples: 
 #		|URL                                                         | 
 #		|https://www.slideteam.net/professional-powerpoint-templates |     		
-#	@loadatestonDalls(USA) 
+#	@loadatestonSanAnotonio(USA) 
 #	Scenario Outline: 
 #		Given Navigate to the website url. 
 #		Then Fills the Analyze Performance of app "<URL>". 
 #		Then Select the USA country. 
 #		Then click on Analyze cta. 
 #		Then Get fully loaded Time,location and title URL. 
-#		Then After Analyze the Most Downloaded app see result for Dallas, USA. 
+#		Then After Analyze the Most Downloaded app see result for San Anotonio, USA. 
 #		Then Most Downloaded page location and loaded time for USA country. 
 #		Examples: 
 #			|URL                                                         | 
@@ -186,14 +184,14 @@ Scenario Outline:
 #					Examples: 
 #						|URL                                                         | 
 #						|https://www.slideteam.net/new-powerpoint-templates          |     		
-#					@loadatestonDalls(USA) 
+#					@loadatestonSanAnotonio(USA) 
 #					Scenario Outline: 
 #						Given Navigate to the website url. 
 #						Then Fills the Analyze Performance of app "<URL>". 
 #						Then Select the USA country. 
 #						Then click on Analyze cta. 
 #						Then Get fully loaded Time,location and title URL. 
-#						Then After Analyze the Newly Added app see result for Dallas, USA. 
+#						Then After Analyze the Newly Added app see result for San Anotonio, USA. 
 #						Then Newly Added page location and loaded time for USA country. 
 #						Examples: 
 #							|URL                                                | 
@@ -236,14 +234,14 @@ Scenario Outline:
 #	Examples: 
 #		|URL                                                         | 
 #		|https://www.slideteam.net/business_powerpoint_diagrams|    		
-#	@loadatestonDalls(USA) 
+#	@loadatestonSanAnotonio(USA) 
 #	Scenario Outline: 
 #		Given Navigate to the website url. 
 #		Then Fills the Analyze Performance of app "<URL>". 
 #		Then Select the USA country. 
 #		Then click on Analyze cta. 
 #		Then Get fully loaded Time,location and title URL. 
-#		Then After Analyze the template finder app see result for Dallas, USA. 
+#		Then After Analyze the template finder app see result for San Anotonio, USA. 
 #        Then Template Finder page location and loaded time for USA country. 
 #		Examples: 
 #			|URL                                                | 
@@ -273,14 +271,14 @@ Scenario Outline:
 #	Examples: 
 #		|URL                                                                   | 
 #		|https://www.slideteam.net/complete-powerpoint-decks-presentations.html|    		
-#	@loadatestonDalls(USA) 
+#	@loadatestonSanAnotonio(USA) 
 #	Scenario Outline: 
 #		Given Navigate to the website url. 
 #		Then Fills the Analyze Performance of app "<URL>". 
 #		Then Select the USA country. 
 #		Then click on Analyze cta. 
 #		Then Get fully loaded Time,location and title URL. 
-#		Then After Analyze the listing page app see result for Dallas, USA. 
+#		Then After Analyze the listing page app see result for San Anotonio, USA. 
 #		Then Listing page location and loaded time for USA country. 
 #		Examples: 
 #			|URL                                                                   | 
@@ -322,14 +320,14 @@ Scenario Outline:
 #	Examples: 
 #		|URL                                                                                                                                                | 
 #		|https://www.slideteam.net/complete-powerpoint-decks-presentations/project-management-time-impact-analysis-complete-powerpoint-deck-with-slides.html|    		
-#	@loadatestonDalls(USA) 
+#	@loadatestonSanAnotonio(USA) 
 #	Scenario Outline: 
 #		Given Navigate to the website url. 
 #		Then Fills the Analyze Performance of app "<URL>". 
 #		Then Select the USA country. 
 #		Then click on Analyze cta. 
 #		Then Get fully loaded Time,location and title URL. 
-#		Then After Analyze the product page app see result for Dallas, USA. 
+#		Then After Analyze the product page app see result for San Anotonio, USA. 
 #		Then Product page location and loaded time for USA country. 
 #		Examples: 
 #			|URL                                                                                                                                                | 
