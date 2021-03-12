@@ -166,8 +166,8 @@ public static String actualTitle;
 		setDataFromFile("Get URL Link for Home Page= " + actualTitle);
 	}
 
-	@Then("^After Analyze the app see result for Dallas, USA\\.$")
-	public void after_Analyze_the_app_see_result_for_Dallas_USA() throws Throwable {
+	@Then("^After Analyze the app see result for San Antonio, USA\\.$")
+	public void after_Analyze_the_app_see_result_for_San_Antonio_USA() throws Throwable {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// Now you can do whatever you need to do with it, for example copy somewhere
 		FileUtils.copyFile(scrFile, new File(
@@ -232,8 +232,8 @@ public static String actualTitle;
 		setDataFromFile("Get URL Link for SAMPLE free page= " + actualTitle);
 	}
 
-	@Then("^After Analyze the smaple free app see result for Dallas, USA\\.$")
-	public void after_Analyze_the_smaple_free_app_see_result_for_Dallas_USA() throws Throwable {
+	@Then("^After Analyze the smaple free app see result for San Antonio, USA\\.$")
+	public void after_Analyze_the_smaple_free_app_see_result_for_San_Antonio_USA() throws Throwable {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// Now you can do whatever you need to do with it, for example copy somewhere
 		FileUtils.copyFile(scrFile, new File(
@@ -300,8 +300,8 @@ public static String actualTitle;
 		Thread.sleep(500);
 	}
 
-	@Then("^After Analyze the share and download app see result for Dallas, USA\\.$")
-	public void after_Analyze_the_share_and_download_app_see_result_for_Dallas_USA() throws Throwable {
+	@Then("^After Analyze the share and download app see result for San Antonio, USA\\.$")
+	public void after_Analyze_the_share_and_download_app_see_result_for_San_Antonio_USA() throws Throwable {
 		System.err.println("Get Current location from the Share And Download page" + location);
 		System.err.println("Share And Download PAGE Loaded TIME for= " + speedtime);
 		System.err.println("Get URL Link for Share And Download Page = " + actualTitle);
@@ -363,8 +363,8 @@ public static String actualTitle;
 				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Most Downloaded\\canada.png"));
 		Thread.sleep(500);
 	}
-	@Then("^After Analyze the Most Downloaded app see result for Dallas, USA\\.$")
-	public void after_Analyze_the_Most_Downloaded_app_see_result_for_Dallas_USA() throws Throwable {
+	@Then("^After Analyze the Most Downloaded app see result for San Antonio, USA\\.$")
+	public void after_Analyze_the_Most_Downloaded_app_see_result_for_San_Antonio_USA() throws Throwable {
 		System.err.println("Get Current location from the Most Downloaded page" + location);
 		System.err.println("Most Downloaded PAGE Loaded TIME for= " + speedtime);
 		System.err.println("Get URL Link for Most Downloaded Page = " + actualTitle);
@@ -427,8 +427,8 @@ public static String actualTitle;
 
 	}
 
-	@Then("^After Analyze the Newly Added app see result for Dallas, USA\\.$")
-	public void after_Analyze_the_Newly_Added_app_see_result_for_Dallas_USA() throws Throwable {
+	@Then("^After Analyze the Newly Added app see result for San Antonio, USA\\.$")
+	public void after_Analyze_the_Newly_Added_app_see_result_for_San_Antonio_USA() throws Throwable {
 		System.err.println("Get Current location from the Newly Added page" + location);
 		System.err.println("Newly Added PAGE Loaded TIME for= " + speedtime);
 		System.err.println("Get URL Link for Newly Added Page = " + actualTitle);
@@ -487,8 +487,8 @@ public static String actualTitle;
 		Thread.sleep(500);
 	}
 
-	@Then("^After Analyze the template finder app see result for Dallas, USA\\.$")
-	public void after_Analyze_the_template_finder_app_see_result_for_Dallas_USA() throws Throwable {
+	@Then("^After Analyze the template finder app see result for San Antonio, USA\\.$")
+	public void after_Analyze_the_template_finder_app_see_result_for_San_Antonio_USA() throws Throwable {
 		System.err.println("Get Current location from the Template finder page" + location);
 		System.err.println("Template finder PAGE Loaded TIME for= " + speedtime);
 		System.err.println("Get URL Link for Template finder Page = " + actualTitle);
@@ -547,8 +547,8 @@ public static String actualTitle;
 				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\listing page\\Canada.png"));
 		Thread.sleep(500);
 	}
-	@Then("^After Analyze the listing page app see result for Dallas, USA\\.$")
-	public void after_Analyze_the_listing_page_app_see_result_for_Dallas_USA() throws Throwable {
+	@Then("^After Analyze the listing page app see result for San Antonio, USA\\.$")
+	public void after_Analyze_the_listing_page_app_see_result_for_San_Antonio_USA() throws Throwable {
 		System.err.println("Get Current location from the Listing page" + location);
 		System.err.println("Listing PAGE Loaded TIME for= " + speedtime);
 		System.err.println("Get URL Link for Listing Page = " + actualTitle);
@@ -562,21 +562,6 @@ public static String actualTitle;
 		Thread.sleep(1000);
 	}
 
-	@Then("^After Analyze the listing page app see result for Hong Kong, China\\.$")
-	public void after_Analyze_the_listing_page_app_see_result_for_Hong_Kong_China() throws Throwable {
-		System.err.println("Get Current location from the Listing page" + location);
-		System.err.println("Listing PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Listing Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Listing page= " + location);
-		setDataFromFile("Listing PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Template Listing= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\listing page\\China.png"));
-		Thread.sleep(1000);
-
-	}
 
 	@Then("^After Analyze the listing page app see result for London, UK\\.$")
 	public void after_Analyze_the_listing_page_app_see_result_for_London_UK() throws Throwable {
@@ -627,8 +612,8 @@ public static String actualTitle;
 
 	}
 
-	@Then("^After Analyze the product page app see result for Dallas, USA\\.$")
-	public void after_Analyze_the_product_page_app_see_result_for_Dallas_USA() throws Throwable {
+	@Then("^After Analyze the product page app see result for San Antonio, USA\\.$")
+	public void after_Analyze_the_product_page_app_see_result_for_San_Antonio_USA() throws Throwable {
 		System.err.println("Get Current location from the Product page" + location);
 		System.err.println("Product PAGE Loaded TIME for= " + speedtime);
 		System.err.println("Get URL Link for Product Page = " + actualTitle);
@@ -689,134 +674,134 @@ public static String actualTitle;
 
 	@Then("^London location and time loaded in excelsheet\\.$")
 	public void London_location() throws Exception {
-		putDataInExcel(4);
+		putDataInExcel(3);
 	}
 
 	@Then("^India location and time loaded in excelsheet\\.$")
 	public void Indialocation() throws Exception {
-		putDataInExcel(5);
+		putDataInExcel(4);
 	}
 
 
 	@Then("^Sample page location and loaded time for Canada country\\.$")
 	public void sample_location_time() throws Exception {
-		putDataInExcel(9);
+		putDataInExcel(5);
 	}
 
 	@Then("^Sample page location and loaded time for USA country\\.$")
 	public void sample_page_location_and_loaded_time_for_USA_country() throws Throwable {
-		putDataInExcel(10);
+		putDataInExcel(6);
 	}
 
 
 	@Then("^Sample page location and loaded time for UK country\\.$")
 	public void sample_page_location_and_loaded_time_for_UK_country() throws Throwable {
-		putDataInExcel(12);
+		putDataInExcel(7);
 	}
 
 	@Then("^Sample page location and loaded time for India country\\.$")
 	public void sample_page_location_and_loaded_time_for_India_country() throws Throwable {
-		putDataInExcel(13);
+		putDataInExcel(8);
 	}
 
 
 	@Then("^Share and download page location and loaded time for Canada country\\.$")
 	public void share_and_download_page_location_and_loaded_time_for_Canada_country() throws Throwable {
-		putDataInExcel(17);
+		putDataInExcel(9);
 	}
 
 	@Then("^Share and download page location and loaded time for USA country\\.$")
 	public void share_and_download_page_location_and_loaded_time_for_USA_country() throws Throwable {
-		putDataInExcel(18);
+		putDataInExcel(10);
 	}
 
 
 	@Then("^Share and download page location and loaded time for UK country\\.$")
 	public void share_and_download_page_location_and_loaded_time_for_UK_country() throws Throwable {
-		putDataInExcel(20);
+		putDataInExcel(11);
 	}
 
 	@Then("^Share and download page location and loaded time for India country\\.$")
 	public void share_and_download_page_location_and_loaded_time_for_India_country() throws Throwable {
-		putDataInExcel(21);
+		putDataInExcel(12);
 	}
 
 
 	@Then("^Most Downloaded page location and loaded time for Canada country\\.$")
 	public void most_Downloaded_page_location_and_loaded_time_for_Canada_country() throws Throwable {
-		putDataInExcel(25);
+		putDataInExcel(13);
 	}
 
 	@Then("^Most Downloaded page location and loaded time for USA country\\.$")
 	public void most_Downloaded_page_location_and_loaded_time_for_USA_country() throws Throwable {
-		putDataInExcel(26);
+		putDataInExcel(14);
 	}
 
 
 
 	@Then("^Most Downloaded page location and loaded time for UK country\\.$")
 	public void most_Downloaded_page_location_and_loaded_time_for_UK_country() throws Throwable {
-		putDataInExcel(28);
+		putDataInExcel(15);
 	}
 
 	@Then("^Most Downloaded page location and loaded time for India country\\.$")
 	public void most_Downloaded_page_location_and_loaded_time_for_India_country() throws Throwable {
-		putDataInExcel(29);
+		putDataInExcel(16);
 	}
 
 
 	@Then("^Newly Added page location and loaded time for Canada country\\.$")
 	public void newly_Added_page_location_and_loaded_time_for_Canada_country() throws Throwable {
-		putDataInExcel(33);
+		putDataInExcel(17);
 	}
 
 	@Then("^Newly Added page location and loaded time for USA country\\.$")
 	public void newly_Added_page_location_and_loaded_time_for_USA_country() throws Throwable {
-		putDataInExcel(34);
+		putDataInExcel(18);
 	}
 
 
 	@Then("^Newly Added page location and loaded time for UK country\\.$")
 	public void newly_Added_page_location_and_loaded_time_for_UK_country() throws Throwable {
-		putDataInExcel(36);
+		putDataInExcel(19);
 	}
 
 	@Then("^Newly Added page location and loaded time for India country\\.$")
 	public void newly_Added_page_location_and_loaded_time_for_India_country() throws Throwable {
-		putDataInExcel(37);
+		putDataInExcel(20);
 	}
 
 
 	@Then("^Template Finder page location and loaded time for Canada country\\.$")
 	public void template_Finder_page_location_and_loaded_time_for_Canada_country() throws Throwable {
-		putDataInExcel(41);
+		putDataInExcel(21);
 	}
 
 	@Then("^Template Finder page location and loaded time for USA country\\.$")
 	public void template_Finder_page_location_and_loaded_time_for_USA_country() throws Throwable {
-		putDataInExcel(42);
+		putDataInExcel(22);
 	}
 
 
 	@Then("^Template Finder page location and loaded time for UK country\\.$")
 	public void template_Finder_page_location_and_loaded_time_for_UK_country() throws Throwable {
-		putDataInExcel(44);
+		putDataInExcel(23);
 	}
 
 	@Then("^Template Finder page location and loaded time for India country\\.$")
 	public void template_Finder_page_location_and_loaded_time_for_India_country() throws Throwable {
-		putDataInExcel(45);
+		putDataInExcel(24);
 	}
 
 
 	@Then("^Listing page location and loaded time for Canada country\\.$")
 	public void listing_page_location_and_loaded_time_for_Canada_country() throws Throwable {
-		putDataInExcel(49);
+		putDataInExcel(25);
 	}
 
 	@Then("^Listing page location and loaded time for USA country\\.$")
 	public void listing_page_location_and_loaded_time_for_USA_country() throws Throwable {
-		putDataInExcel(50);
+		putDataInExcel(26);
 		
 //		sh1.getRow(1).createCell(0).setCellValue("https://slideteam.net");
 	}
@@ -824,34 +809,34 @@ public static String actualTitle;
 
 	@Then("^Listing page location and loaded time for UK country\\.$")
 	public void listing_page_location_and_loaded_time_for_UK_country() throws Throwable {
-		putDataInExcel(52);
+		putDataInExcel(27);
 	}
 
 	@Then("^Listing page location and loaded time for India country\\.$")
 	public void listing_page_location_and_loaded_time_for_India_country() throws Throwable {
-		putDataInExcel(53);
+		putDataInExcel(28);
 	}
 
 
 	@Then("^Product page location and loaded time for Canada country\\.$")
 	public void product_page_location_and_loaded_time_for_Canada_country() throws Throwable {
-		putDataInExcel(57);
+		putDataInExcel(29);
 	}
 
 	@Then("^Product page location and loaded time for USA country\\.$")
 	public void product_page_location_and_loaded_time_for_USA_country() throws Throwable {
-		putDataInExcel(58);
+		putDataInExcel(30);
 	}
 
 
 	@Then("^Product page location and loaded time for UK country\\.$")
 	public void product_page_location_and_loaded_time_for_UK_country() throws Throwable {
-		putDataInExcel(60);
+		putDataInExcel(31);
 	}
 
 	@Then("^Product page location and loaded time for India country\\.$")
 	public void product_page_location_and_loaded_time_for_India_country() throws Throwable {
-		putDataInExcel(61);
+		putDataInExcel(32);
 	}
 
 // write get text value in excel sheet
