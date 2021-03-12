@@ -61,7 +61,7 @@ public static String actualTitle;
 		wait.implictywait(driver);
 		webelement.clear();
 		wait.implictywait(driver);
-		webelement.sendKeys(email);
+		webelement.sendKeys('test147@gmail.com');
 		wait.implictywait(driver);
 	}
 
@@ -72,7 +72,7 @@ public static String actualTitle;
 		wait.implictywait(driver);
 		webelement.clear();
 		wait.implictywait(driver);
-		webelement.sendKeys(passwd);
+		webelement.sendKeys('Qwerty');
 		wait.implictywait(driver);
 	}
 
