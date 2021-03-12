@@ -105,16 +105,6 @@ public static String actualTitle;
 		Thread.sleep(500);
 	}
 
-	@Then("^Select China country\\.$")
-	public void select_China() throws Throwable {
-		for (int i = 0; i <2; i++){
-		WebElement listin = driver.findElement(GtmetricObject.country);
-		listin.click();
-		wait.implictywait(driver);
-		Thread.sleep(500);
-		}
-	}
-
 	@Then("^Select London country\\.$")
 	public void select_London() throws Throwable {
 		for (int i = 0; i <3; i++){
@@ -136,25 +126,6 @@ public static String actualTitle;
 		}
 	}
 
-	@Then("^Select Sydney country\\.$")
-	public void select_Sydney() throws Throwable {
-		for (int i = 0; i <5; i++){
-		WebElement listin = driver.findElement(GtmetricObject.country);
-		listin.click();
-		wait.implictywait(driver);
-		Thread.sleep(500);
-		}
-	}
-
-	@Then("^Select Paulo country\\.$")
-	public void selectPaulo() throws Throwable {
-		for (int i = 0; i <6; i++){
-		WebElement listin = driver.findElement(GtmetricObject.country);
-		listin.click();
-		wait.implictywait(driver);
-		Thread.sleep(500);
-		}	
-	}
 
 	@Then("^click on Analyze cta\\.$")
 	public void card_page() throws InterruptedException {
@@ -211,21 +182,7 @@ public static String actualTitle;
 		setDataFromFile("Get URL Link for Home Page= " + actualTitle);
 	}
 
-	@Then("^After Analyze the app see result for Hong Kong, China\\.$")
-	public void after_Analyze_the_app_see_result_for_Hong_Kong_China() throws Throwable {
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\home\\Hong Kong.png"));
-		Thread.sleep(500);
-		System.err.println("Get Current location from the home page= " + location);
-		System.err.println("HOME PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Home Page = " + actualTitle);
-		setDataFromFile("Get Current location from the home page= "+ location);
-		setDataFromFile("HOME PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Home Page= " + actualTitle);
-	
-	}
+
 
 	@Then("^After Analyze the app see result for London, UK\\.$")
 	public void after_Analyze_the_app_see_result_for_London_UK() throws Throwable {
@@ -258,36 +215,7 @@ public static String actualTitle;
 		setDataFromFile("Get URL Link for Home Page= " + actualTitle);
 	}
 
-	@Then("^After Analyze the app see result for Sydney, Australia\\.$")
-	public void after_Analyze_the_app_see_result_for_Sydney_Australia() throws Throwable {
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\home\\Sydney.png"));
-		Thread.sleep(500);
-		System.err.println("Get Current location from the home page= " + location);
-		System.err.println("HOME PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Home Page = " + actualTitle);
-		setDataFromFile("Get Current location from the home page= "+ location);
-		setDataFromFile("HOME PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Home Page= " + actualTitle);
-	}
-
-	@Then("^After Analyze the app see result for São Paulo, Brazil\\.$")
-	public void after_Analyze_the_app_see_result_for_São_Paulo_Brazil() throws Throwable {
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\home\\Paulo.png"));
-		Thread.sleep(500);
-		System.err.println("Get Current location from the home page= " + location);
-		System.err.println("HOME PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Home Page = " + actualTitle);
-		setDataFromFile("Get Current location from the home page= " + location);
-		setDataFromFile("HOME PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Home Page= " + actualTitle);
-	}
-
+	
 //sample page time
 	@Then("^After Analyze the smaple free app see result for Vancouver, Canada\\.$")
 	public void after_Analyze_the_smaple_free_app_see_result_for_Vancouver_Canada() throws Throwable {
@@ -320,20 +248,7 @@ public static String actualTitle;
 
 	}
 
-	@Then("^After Analyze the smaple free app see result for Hong Kong, China\\.$")
-	public void after_Analyze_the_smaple_free_app_see_result_for_Hong_Kong_China() throws Throwable {
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\sample\\China.png"));
-		Thread.sleep(500);
-		System.err.println("Get Current location from the smaple free page" + location);
-		System.err.println("SAMPLE free PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for SAMPLE free Page = " + actualTitle);
-		setDataFromFile("Get Current location from the SAMPLE Free page= " + location);
-		setDataFromFile("SAMPLE Free PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for SAMPLE free page= " + actualTitle);
-	}
+	
 
 	@Then("^After Analyze the smaple free app see result for London, UK\\.$")
 	public void after_Analyze_the_smaple_free_app_see_result_for_London_UK() throws Throwable {
@@ -367,39 +282,7 @@ public static String actualTitle;
 		Thread.sleep(500);
 	}
 
-	@Then("^After Analyze the smaple free app see result for Sydney, Australia\\.$")
-	public void after_Analyze_the_smaple_free_app_see_result_for_Sydney_Australia() throws Throwable {
-		System.err.println("Get Current location from the smaple free page" + location);
-		System.err.println("SAMPLE free PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for SAMPLE free Page = " + actualTitle);
-		setDataFromFile("Get Current location from the SAMPLE Free page= " + location);
-		setDataFromFile("SAMPLE Free PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for SAMPLE free page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\sample\\Sydney.png"));
-		Thread.sleep(500);
-	}
-	@Then("^After Analyze the smaple free app see result for São Paulo, Brazil\\.$")
-	public void after_Analyze_the_smaple_free_app_see_result_for_São_Paulo_Brazil() throws Throwable {
-		String location = driver.findElement(By.cssSelector("div.report-details-info > div:nth-child(2) > div"))
-				.getText();
-		wait.implictywait(driver);
-		Thread.sleep(500);
-		System.err.println("Get Current location from the smaple free page" + location);
-		System.err.println("SAMPLE free PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for SAMPLE free Page = " + actualTitle);
-		setDataFromFile("Get Current location from the SAMPLE Free page= " + location);
-		setDataFromFile("SAMPLE Free PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for SAMPLE free page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\sample\\Brazil.png"));
-		Thread.sleep(5000);
-
-	}
+	
 // share and download URL
 
 	@Then("^After Analyze the share and download app see result for Vancouver, Canada\\.$")
@@ -433,22 +316,7 @@ public static String actualTitle;
 
 	}
 
-	@Then("^After Analyze the share and download app see result for Hong Kong, China\\.$")
-	public void after_Analyze_the_share_and_download_app_see_result_for_Hong_Kong_China() throws Throwable {
-		System.err.println("Get Current location from the Share And Download page" + location);
-		System.err.println("Share And Download PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Share And Download Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Share And Download page= " + location);
-		setDataFromFile("Share And Download PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Share And Download page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\share and download\\China.png"));
-		Thread.sleep(1000);
-
-	}
-
+	
 	@Then("^After Analyze the share and download app see result for London, UK\\.$")
 	public void after_Analyze_the_share_and_download_app_see_result_for_London_UK() throws Throwable {
 		System.err.println("Get Current location from the Share And Download page" + location);
@@ -479,35 +347,7 @@ public static String actualTitle;
 		Thread.sleep(1000);
 	}
 
-	@Then("^After Analyze the share and download app see result for Sydney, Australia\\.$")
-	public void after_Analyze_the_share_and_download_app_see_result_for_Sydney_Australia() throws Throwable {
-		System.err.println("Get Current location from the Share And Download page" + location);
-		System.err.println("Share And Download PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Share And Download Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Share And Download page= " + location);
-		setDataFromFile("Share And Download PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Share And Download page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\share and download\\Sydney.png"));
-		Thread.sleep(1000);
-	}
-
-	@Then("^After Analyze the share and download app see result for São Paulo, Brazil\\.$")
-	public void after_Analyze_the_share_and_download_app_see_result_for_São_Paulo_Brazil() throws Throwable {
-		System.err.println("Get Current location from the Share And Download page" + location);
-		System.err.println("Share And Download PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Share And Download Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Share And Download page= " + location);
-		setDataFromFile("Share And Download PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Share And Download page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\share and download\\Brazil.png"));
-		Thread.sleep(1000);
-	}
+	
 //downloaded  most link
 	@Then("^After Analyze the Most Downloaded app see result for Vancouver, Canada\\.$")
 	public void after_Analyze_the_Most_Downloaded_app_see_result_for_Vancouver_Canada() throws Throwable {
@@ -537,20 +377,7 @@ public static String actualTitle;
 				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Most Downloaded\\USA.png"));
 		Thread.sleep(500);
 	}
-	@Then("^After Analyze the Most Downloaded app see result for Hong Kong, China\\.$")
-	public void after_Analyze_the_Most_Downloaded_app_see_result_for_Hong_Kong_China() throws Throwable {
-		System.err.println("Get Current location from the Most Downloaded page" + location);
-		System.err.println("Most Downloaded PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Most Downloaded Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Most Downloaded page= " + location);
-		setDataFromFile("Most Downloaded PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Most Downloaded page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Most Downloaded\\China.png"));
-		Thread.sleep(1000);
-	}
+	
 
 	@Then("^After Analyze the Most Downloaded app see result for London, UK\\.$")
 	public void London() throws Throwable {
@@ -582,37 +409,7 @@ public static String actualTitle;
 		Thread.sleep(500);
 	}
 
-	@Then("^After Analyze the Most Downloaded app see result for Sydney, Australia\\.$")
-	public void after_Analyze_the_Most_Downloaded_app_see_result_for_Sydney_Australia() throws Throwable {
-		System.err.println("Get Current location from the Most Downloaded page" + location);
-		System.err.println("Most Downloaded PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Most Downloaded Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Most Downloaded page= " + location);
-		setDataFromFile("Most Downloaded PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Most Downloaded page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Most Downloaded\\Australia.png"));
-		Thread.sleep(1000);
-
-	}
-
-	@Then("^After Analyze the Most Downloaded app see result for São Paulo, Brazil\\.$")
-	public void after_Analyze_the_Most_Downloaded_app_see_result_for_São_Paulo_Brazil() throws Throwable {
-		System.err.println("Get Current location from the Most Downloaded page" + location);
-		System.err.println("Most Downloaded PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Most Downloaded Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Most Downloaded page= " + location);
-		setDataFromFile("Most Downloaded PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Most Downloaded page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Most Downloaded\\Brazil.png"));
-		Thread.sleep(1000);
-
-	}
+	
 //Newly Added
 	@Then("^After Analyze the Newly Added app see result for Vancouver, Canada\\.$")
 	public void after_Analyze_the_Newly_Added_app_see_result_for_Vancouver_Canada() throws Throwable {
@@ -645,20 +442,7 @@ public static String actualTitle;
 		Thread.sleep(1000);
 	}
 
-	@Then("^After Analyze the Newly Added app see result for Hong Kong, China\\.$")
-	public void after_Analyze_the_Newly_Added_app_see_result_for_Hong_Kong_China() throws Throwable {
-		System.err.println("Get Current location from the Newly Added page" + location);
-		System.err.println("Newly Added PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Newly Added Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Newly Added page= " + location);
-		setDataFromFile("Newly Added PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Newly Added page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Newly Added\\China.png"));
-		Thread.sleep(500);
-	}
+	
 
 	@Then("^After Analyze the Newly Added app see result for London, UK\\.$")
 	public void after_Analyze_the_Newly_Added_app_see_result_for_London_UK() throws Throwable {
@@ -687,37 +471,7 @@ public static String actualTitle;
 		FileUtils.copyFile(scrFile, new File(
 				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Newly Added\\India.png"));
 		Thread.sleep(500);
-	}
-	@Then("^After Analyze the Newly Added app see result for Sydney, Australia\\.$")
-	public void after_Analyze_the_Newly_Added_app_see_result_for_Sydney_Australia() throws Throwable {
-		System.err.println("Get Current location from the Newly Added page" + location);
-		System.err.println("Newly Added PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Newly Added Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Newly Added page= " + location);
-		setDataFromFile("Newly Added PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Newly Added page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Newly Added\\Australia.png"));
-		Thread.sleep(500);
-	}
-
-	@Then("^After Analyze the Newly Added app see result for São Paulo, Brazil\\.$")
-	public void after_Analyze_the_Newly_Added_app_see_result_for_São_Paulo_Brazil() throws Throwable {
-		System.err.println("Get Current location from the Newly Added page" + location);
-		System.err.println("Newly Added PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Newly Added Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Newly Added page= " + location);
-		setDataFromFile("Newly Added PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Newly Added page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Newly Added\\Brazil.png"));
-		Thread.sleep(500);
-
-	}
+	
 //template Finder
 	@Then("^After Analyze the template finder app see result for Vancouver, Canada\\.$")
 	public void after_Analyze_the_template_finder_app_see_result_for_Vancouver_Canada() throws Throwable {
@@ -747,20 +501,7 @@ public static String actualTitle;
 				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\template finder\\USA.png"));
 		Thread.sleep(500);
 	}
-	@Then("^After Analyze the template finder app see result for Hong Kong, China\\.$")
-	public void after_Analyze_the_template_finder_app_see_result_for_Hong_Kong_China() throws Throwable {
-		System.err.println("Get Current location from the Template finder page" + location);
-		System.err.println("Template finder PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Template finder Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Template finder page= " + location);
-		setDataFromFile("Template finder PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Template finder page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\template finder\\China.png"));
-		Thread.sleep(500);
-	}
+	
 	@Then("^After Analyze the template finder app see result for London, UK\\.$")
 	public void after_Analyze_the_template_finder_app_see_result_for_London_UK() throws Throwable {
 		System.err.println("Get Current location from the Template finder page" + location);
@@ -789,36 +530,7 @@ public static String actualTitle;
 				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\template finder\\India.png"));
 		Thread.sleep(500);
 	}
-	@Then("^After Analyze the template finder app see result for Sydney, Australia\\.$")
-	public void after_Analyze_the_template_finder_app_see_result_for_Sydney_Australia() throws Throwable {
-		System.err.println("Get Current location from the Template finder page" + location);
-		System.err.println("Template finder PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Template finder Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Template finder page= " + location);
-		setDataFromFile("Template finder PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Template finder page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\template finder\\Australia.png"));
-		Thread.sleep(1000);
-
-	}
-
-	@Then("^After Analyze the template finder app see result for São Paulo, Brazil\\.$")
-	public void after_Analyze_the_template_finder_app_see_result_for_São_Paulo_Brazil() throws Throwable {
-		System.err.println("Get Current location from the Template finder page" + location);
-		System.err.println("Template finder PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Template finder Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Template finder page= " + location);
-		setDataFromFile("Template finder PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Template finder page= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\template finder\\Brazil.png"));
-		Thread.sleep(1000);
-	}
+	
 
 	//Listig page
 	@Then("^After Analyze the listing page app see result for Vancouver, Canada\\.$")
@@ -897,35 +609,7 @@ public static String actualTitle;
 		Thread.sleep(1000);
 	}
 
-	@Then("^After Analyze the listing page app see result for Sydney, Australia\\.$")
-	public void after_Analyze_the_listing_page_app_see_result_for_Sydney_Australia() throws Throwable {
-		System.err.println("Get Current location from the Listing page" + location);
-		System.err.println("Listing PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Listing Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Listing page= " + location);
-		setDataFromFile("Listing PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Template Listing= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\listing page\\Australia.png"));
-		Thread.sleep(1000);
-	}
-
-	@Then("^After Analyze the listing page app see result for São Paulo, Brazil\\.$")
-	public void after_Analyze_the_listing_page_app_see_result_for_São_Paulo_Brazil() throws Throwable {
-		System.err.println("Get Current location from the Listing page" + location);
-		System.err.println("Listing PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Listing Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Listing page= " + location);
-		setDataFromFile("Listing PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Template Listing= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\listing page\\Brazil.png"));
-		Thread.sleep(1000);
-	}
+	
 //Product Page
 	@Then("^After Analyze the product page app see result for Vancouver, Canada\\.$")
 	public void after_Analyze_the_product_page_app_see_result_for_Vancouver_Canada() throws Throwable {
@@ -958,20 +642,7 @@ public static String actualTitle;
 		Thread.sleep(500);
 	}
 
-	@Then("^After Analyze the product page app see result for Hong Kong, China\\.$")
-	public void after_Analyze_the_product_page_app_see_result_for_Hong_Kong_China() throws Throwable {
-		System.err.println("Get Current location from the Product page" + location);
-		System.err.println("Product PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Product Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Product page= " + location);
-		setDataFromFile("Product PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Product= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\product page\\China.png"));
-		Thread.sleep(1000);
-	}
+	
 	@Then("^After Analyze the product page app see result for London, UK\\.$")
 	public void after_Analyze_the_product_page_app_see_result_for_London_UK() throws Throwable {
 		System.err.println("Get Current location from the Product page" + location);
@@ -1001,36 +672,7 @@ public static String actualTitle;
 				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\product page\\India.png"));
 		Thread.sleep(500);
 	}
-	@Then("^After Analyze the product page app see result for Sydney, Australia\\.$")
-	public void after_Analyze_the_product_page_app_see_result_for_Sydney_Australia() throws Throwable {
-		System.err.println("Get Current location from the Product page" + location);
-		System.err.println("Product PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Product Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Product page= " + location);
-		setDataFromFile("Product PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Product= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\product page\\Australia.png"));
-		Thread.sleep(500);
-	}
-
-	@Then("^After Analyze the product page app see result for São Paulo, Brazil\\.$")
-	public void after_Analyze_the_product_page_app_see_result_for_São_Paulo_Brazil() throws Throwable {
-		System.err.println("Get Current location from the Product page" + location);
-		System.err.println("Product PAGE Loaded TIME for= " + speedtime);
-		System.err.println("Get URL Link for Product Page = " + actualTitle);
-		setDataFromFile("Get Current location from the Product page= " + location);
-		setDataFromFile("Product PAGE Loaded TIME FOR = " + speedtime);
-		setDataFromFile("Get URL Link for Product= " + actualTitle);
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File(
-				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\product page\\Brazil.png"));
-		Thread.sleep(500);
-	}
-
+	
 	@Then("^write time on location in excelsheet\\.$")
 	public void write_text() throws Exception {
 	
@@ -1045,11 +687,6 @@ public static String actualTitle;
 	
 	}
 
-	@Then("^China location and time loaded in excelsheet\\.$")
-	public void chinalocation() throws Exception {
-		putDataInExcel(3);
-	}
-
 	@Then("^London location and time loaded in excelsheet\\.$")
 	public void London_location() throws Exception {
 		putDataInExcel(4);
@@ -1060,15 +697,6 @@ public static String actualTitle;
 		putDataInExcel(5);
 	}
 
-	@Then("^Australia location and time loaded in excelsheet\\.$")
-	public void Australia_location() throws Exception {
-		putDataInExcel(6);
-	}
-
-	@Then("^Brazil location and time loaded in excelsheet\\.$")
-	public void chinadata() throws Exception {
-		putDataInExcel(7);
-	}
 
 	@Then("^Sample page location and loaded time for Canada country\\.$")
 	public void sample_location_time() throws Exception {
@@ -1080,10 +708,6 @@ public static String actualTitle;
 		putDataInExcel(10);
 	}
 
-	@Then("^Sample page location and loaded time for China country\\.$")
-	public void sample_page_location_and_loaded_time_for_China_country() throws Throwable {
-		putDataInExcel(11);
-	}
 
 	@Then("^Sample page location and loaded time for UK country\\.$")
 	public void sample_page_location_and_loaded_time_for_UK_country() throws Throwable {
@@ -1095,15 +719,6 @@ public static String actualTitle;
 		putDataInExcel(13);
 	}
 
-	@Then("^Sample page location and loaded time for Australia country\\.$")
-	public void sample_page_location_and_loaded_time_for_Australia_country() throws Throwable {
-		putDataInExcel(14);
-	}
-
-	@Then("^Sample page location and loaded time for Brazil country\\.$")
-	public void sample_page_location_and_loaded_time_for_Brazil_country() throws Throwable {
-		putDataInExcel(15);
-	}
 
 	@Then("^Share and download page location and loaded time for Canada country\\.$")
 	public void share_and_download_page_location_and_loaded_time_for_Canada_country() throws Throwable {
@@ -1115,10 +730,6 @@ public static String actualTitle;
 		putDataInExcel(18);
 	}
 
-	@Then("^Share and download page location and loaded time for China country\\.$")
-	public void share_and_download_page_location_and_loaded_time_for_China_country() throws Throwable {
-		putDataInExcel(19);
-	}
 
 	@Then("^Share and download page location and loaded time for UK country\\.$")
 	public void share_and_download_page_location_and_loaded_time_for_UK_country() throws Throwable {
@@ -1130,15 +741,6 @@ public static String actualTitle;
 		putDataInExcel(21);
 	}
 
-	@Then("^Share and download page location and loaded time for Australia country\\.$")
-	public void share_and_download_page_location_and_loaded_time_for_Australia_country() throws Throwable {
-		putDataInExcel(22);
-	}
-
-	@Then("^Share and download page location and loaded time for Brazil country\\.$")
-	public void share_and_download_page_location_and_loaded_time_for_Brazil_country() throws Throwable {
-		putDataInExcel(23);
-	}
 
 	@Then("^Most Downloaded page location and loaded time for Canada country\\.$")
 	public void most_Downloaded_page_location_and_loaded_time_for_Canada_country() throws Throwable {
@@ -1150,10 +752,7 @@ public static String actualTitle;
 		putDataInExcel(26);
 	}
 
-	@Then("^Most Downloaded page location and loaded time for China country\\.$")
-	public void most_Downloaded_page_location_and_loaded_time_for_China_country() throws Throwable {
-		putDataInExcel(27);
-	}
+
 
 	@Then("^Most Downloaded page location and loaded time for UK country\\.$")
 	public void most_Downloaded_page_location_and_loaded_time_for_UK_country() throws Throwable {
@@ -1165,15 +764,6 @@ public static String actualTitle;
 		putDataInExcel(29);
 	}
 
-	@Then("^Most Downloaded page location and loaded time for Australia country\\.$")
-	public void most_Downloaded_page_location_and_loaded_time_for_Australia_country() throws Throwable {
-		putDataInExcel(30);
-	}
-
-	@Then("^Most Downloaded page location and loaded time for Brazil country\\.$")
-	public void most_Downloaded_page_location_and_loaded_time_for_Brazil_country() throws Throwable {
-		putDataInExcel(31);
-	}
 
 	@Then("^Newly Added page location and loaded time for Canada country\\.$")
 	public void newly_Added_page_location_and_loaded_time_for_Canada_country() throws Throwable {
@@ -1185,10 +775,6 @@ public static String actualTitle;
 		putDataInExcel(34);
 	}
 
-	@Then("^Newly Added page location and loaded time for China country\\.$")
-	public void newly_Added_page_location_and_loaded_time_for_China_country() throws Throwable {
-		putDataInExcel(35);
-	}
 
 	@Then("^Newly Added page location and loaded time for UK country\\.$")
 	public void newly_Added_page_location_and_loaded_time_for_UK_country() throws Throwable {
@@ -1200,15 +786,6 @@ public static String actualTitle;
 		putDataInExcel(37);
 	}
 
-	@Then("^Newly Added page location and loaded time for Australia country\\.$")
-	public void newly_Added_page_location_and_loaded_time_for_Australia_country() throws Throwable {
-		putDataInExcel(38);
-	}
-
-	@Then("^Newly Added page location and loaded time for Brazil country\\.$")
-	public void newly_Added_page_location_and_loaded_time_for_Brazil_country() throws Throwable {
-		putDataInExcel(39);
-	}
 
 	@Then("^Template Finder page location and loaded time for Canada country\\.$")
 	public void template_Finder_page_location_and_loaded_time_for_Canada_country() throws Throwable {
@@ -1220,10 +797,6 @@ public static String actualTitle;
 		putDataInExcel(42);
 	}
 
-	@Then("^Template Finder page location and loaded time for China country\\.$")
-	public void template_Finder_page_location_and_loaded_time_for_China_country() throws Throwable {
-		putDataInExcel(43);
-	}
 
 	@Then("^Template Finder page location and loaded time for UK country\\.$")
 	public void template_Finder_page_location_and_loaded_time_for_UK_country() throws Throwable {
@@ -1235,15 +808,6 @@ public static String actualTitle;
 		putDataInExcel(45);
 	}
 
-	@Then("^Template Finder page location and loaded time for Australia country\\.$")
-	public void template_Finder_page_location_and_loaded_time_for_Australia_country() throws Throwable {
-		putDataInExcel(46);
-	}
-
-	@Then("^Template Finder page location and loaded time for Brazil country\\.$")
-	public void template_Finder_page_location_and_loaded_time_for_Brazil_country() throws Throwable {
-		putDataInExcel(47);
-	}
 
 	@Then("^Listing page location and loaded time for Canada country\\.$")
 	public void listing_page_location_and_loaded_time_for_Canada_country() throws Throwable {
@@ -1257,10 +821,6 @@ public static String actualTitle;
 //		sh1.getRow(1).createCell(0).setCellValue("https://slideteam.net");
 	}
 
-	@Then("^Listing page location and loaded time for China country\\.$")
-	public void listing_page_location_and_loaded_time_for_China_country() throws Throwable {
-		putDataInExcel(51);
-	}
 
 	@Then("^Listing page location and loaded time for UK country\\.$")
 	public void listing_page_location_and_loaded_time_for_UK_country() throws Throwable {
@@ -1272,15 +832,6 @@ public static String actualTitle;
 		putDataInExcel(53);
 	}
 
-	@Then("^Listing page location and loaded time for Australia country\\.$")
-	public void listing_page_location_and_loaded_time_for_Australia_country() throws Throwable {
-		putDataInExcel(54);
-	}
-
-	@Then("^Listing page location and loaded time for Brazil country\\.$")
-	public void listing_page_location_and_loaded_time_for_Brazil_country() throws Throwable {
-		putDataInExcel(55);
-	}
 
 	@Then("^Product page location and loaded time for Canada country\\.$")
 	public void product_page_location_and_loaded_time_for_Canada_country() throws Throwable {
@@ -1292,10 +843,6 @@ public static String actualTitle;
 		putDataInExcel(58);
 	}
 
-	@Then("^Product page location and loaded time for China country\\.$")
-	public void product_page_location_and_loaded_time_for_China_country() throws Throwable {
-		putDataInExcel(59);
-	}
 
 	@Then("^Product page location and loaded time for UK country\\.$")
 	public void product_page_location_and_loaded_time_for_UK_country() throws Throwable {
@@ -1307,15 +854,6 @@ public static String actualTitle;
 		putDataInExcel(61);
 	}
 
-	@Then("^Product page location and loaded time for Australia country\\.$")
-	public void product_page_location_and_loaded_time_for_Australia_country() throws Throwable {
-		putDataInExcel(62);
-	}
-
-	@Then("^Product page location and loaded time for Brazil country\\.$")
-	public void product_page_location_and_loaded_time_for_Brazil_country() throws Throwable {
-		putDataInExcel(63);
-	}
 // write get text value in excel sheet
 public void putDataInExcel(int row) throws Exception {
 	File src = new File("C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\LoadTest.xlsx");
