@@ -33,6 +33,7 @@ import cucumber.api.java.en.Then;
 public class Pageload_step_definition extends SetupClass {
 	PerformAction wait = new PerformAction();
 	JavascriptExecutor js = (JavascriptExecutor) driver;
+	 WebDriverWait wait = new WebDriverWait(driver,50);
 	Random rad = new Random();
 public static String speedtime;
 public static String location;
@@ -48,7 +49,7 @@ public static String actualTitle;
 	@Then("^Click on the Login button\\.$")
 	public void click_on_Download_this_presentation_link() throws InterruptedException {
 		webelement = driver.findElement(GtmetricObject.Login_button);
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 		webelement.click();
 		Thread.sleep(1000);
 	}
@@ -58,41 +59,41 @@ public static String actualTitle;
 
 		webelement = driver.findElement(GtmetricObject.email);
 		webelement.click();
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 		webelement.clear();
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 		webelement.sendKeys("test147@gmail.com");
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 	}
 
 	@Then("^Insert the user Password \"([^\"]*)\"\\.$")
 	public void enter_user_password_as(String passwd) throws Throwable {
 		webelement = driver.findElement(GtmetricObject.password);
 		webelement.click();
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 		webelement.clear();
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 		webelement.sendKeys("Qwerty");
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 	}
 
 	@Then("^Click on Login\\.$")
 	public void click_on_Login_button() throws Throwable {
 		webelement = driver.findElement(GtmetricObject.login);
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 		webelement.click();
-		wait.implictywait(driver);
+		//Thread.sleep(5000);
 		Thread.sleep(2000);
 	}
 
 	@Given("^Fills the Analyze Performance of app \"([^\"]*)\"\\.$")
 	public void after_signup_redirect_to_price_page(String URL) throws Throwable {
 		webelement = driver.findElement(GtmetricObject.URL);
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		webelement.click();
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		webelement.sendKeys(URL);
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		Thread.sleep(1000);
 	}
 
@@ -101,7 +102,7 @@ public static String actualTitle;
 
 		WebElement listin = driver.findElement(GtmetricObject.country);
 		listin.click();
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		Thread.sleep(500);
 	}
 
@@ -111,7 +112,7 @@ public static String actualTitle;
 			 //click the button
 			WebElement listin = driver.findElement(GtmetricObject.country);
 		listin.click();
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		Thread.sleep(500);
 	}
 	}
@@ -121,7 +122,7 @@ public static String actualTitle;
 			 //click the button
 			WebElement listin = driver.findElement(GtmetricObject.country);
 		listin.click();
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		Thread.sleep(500);
 		}
 	}
@@ -130,25 +131,25 @@ public static String actualTitle;
 	@Then("^click on Analyze cta\\.$")
 	public void card_page() throws InterruptedException {
 		webelement = driver.findElement(GtmetricObject.analyze);
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		webelement.click();
 		Thread.sleep(500);
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		WebElement sucess = new WebDriverWait(driver, 160)
 				.until(ExpectedConditions.visibilityOfElementLocated(GtmetricObject.completed));
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		Thread.sleep(500);
 	}
 	
 	@Then ("^Get fully loaded Time,location and title URL\\.$")
 	public void get_data() {
 		 speedtime = driver.findElement(By.cssSelector("div.report-page-details>div>div:first-child>span")).getText();
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		actualTitle = driver.getCurrentUrl();
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		location = driver.findElement(By.cssSelector("div.report-details-info > div:nth-child(2) > div"))
 				.getText();
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 	}
 
 	@Then("^After Analyze the app see result for Vancouver, Canada\\.$")
@@ -201,7 +202,7 @@ public static String actualTitle;
 
 	@Then("^After Analyze the app see result for Mumbai, India\\.$")
 	public void after_Analyze_the_app_see_result_for_Mumbai_India() throws Throwable {
-		wait.implictywait(driver);
+		Thread.sleep(5000);
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// Now you can do whatever you need to do with it, for example copy somewhere
 		FileUtils.copyFile(scrFile, new File(
