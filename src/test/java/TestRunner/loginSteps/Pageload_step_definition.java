@@ -40,14 +40,14 @@ public static String location;
 public static String actualTitle;
 	// Open web site URl
 	@Given("^Navigate to the website url\\.$")
-	public void navigates_to_website_url() throws InterruptedException {
+	public void navigates_to_website_url() throws Throwable {
 		// Maximize Windows
 		driver.get("https://gtmetrix.com/");
 		Thread.sleep(3000);
 	}
 
 	@Then("^Click on the Login button\\.$")
-	public void click_on_Download_this_presentation_link() throws InterruptedException {
+	public void click_on_Download_this_presentation_link() throws Throwable {
 		webelement = driver.findElement(GtmetricObject.Login_button);
 		Thread.sleep(5000);
 		webelement.click();
@@ -55,7 +55,7 @@ public static String actualTitle;
 	}
 
 	@Then("^Enter user email address \"([^\"]*)\"\\.$")
-	public void enter_user_email_address_as(String email) {
+	public void enter_user_email_address_as(String email) throws Throwable {
 
 		webelement = driver.findElement(GtmetricObject.email);
 		webelement.click();
@@ -129,7 +129,7 @@ public static String actualTitle;
 
 
 	@Then("^click on Analyze cta\\.$")
-	public void card_page() throws InterruptedException {
+	public void card_page() throws Throwable {
 		webelement = driver.findElement(GtmetricObject.analyze);
 		Thread.sleep(5000);
 		webelement.click();
@@ -142,7 +142,7 @@ public static String actualTitle;
 	}
 	
 	@Then ("^Get fully loaded Time,location and title URL\\.$")
-	public void get_data() {
+	public void get_data() throws Throwable {
 		 speedtime = driver.findElement(By.cssSelector("div.report-page-details>div>div:first-child>span")).getText();
 		Thread.sleep(5000);
 		actualTitle = driver.getCurrentUrl();
@@ -660,32 +660,32 @@ public static String actualTitle;
 	}
 	
 	@Then("^write time on location in excelsheet\\.$")
-	public void write_text() throws Exception {
+	public void write_text() throws Throwable {
 	
 	putDataInExcel(1);
 		
 	}
 
 	@Then("^write location in excelsheet\\.$")
-	public void write() throws Exception {
+	public void write() throws Throwable {
 
 		putDataInExcel(2);
 	
 	}
 
 	@Then("^London location and time loaded in excelsheet\\.$")
-	public void London_location() throws Exception {
+	public void London_location() throws Throwable {
 		putDataInExcel(3);
 	}
 
 	@Then("^India location and time loaded in excelsheet\\.$")
-	public void Indialocation() throws Exception {
+	public void Indialocation() throws Throwable {
 		putDataInExcel(4);
 	}
 
 
 	@Then("^Sample page location and loaded time for Canada country\\.$")
-	public void sample_location_time() throws Exception {
+	public void sample_location_time() throws Throwable {
 		putDataInExcel(5);
 	}
 
@@ -841,7 +841,7 @@ public static String actualTitle;
 	}
 
 // write get text value in excel sheet
-public void putDataInExcel(int row) throws Exception {
+public void putDataInExcel(int row) throws Throwable {
 	File src = new File("C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\LoadTest.xlsx");
 	String cellValue[] = {location, speedtime};
 	int count = 0;
@@ -905,7 +905,7 @@ public void putDataInExcel(int row) throws Exception {
 
 
 //Write get text in txt folder
-public void setDataFromFile(String speeed) {
+public void setDataFromFile(String speeed) throws Throwable {
 	File file = new File("C:\\Users\\Administrator\\.jenkins\\workspace\\Test Slideteam Loaded Time\\Write.txt");
 	BufferedReader br;
 	try {
