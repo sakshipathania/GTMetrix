@@ -471,7 +471,7 @@ public static String actualTitle;
 		FileUtils.copyFile(scrFile, new File(
 				"C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\target\\cucumber-html-report\\Newly Added\\India.png"));
 		Thread.sleep(500);
-	
+	}
 //template Finder
 	@Then("^After Analyze the template finder app see result for Vancouver, Canada\\.$")
 	public void after_Analyze_the_template_finder_app_see_result_for_Vancouver_Canada() throws Throwable {
