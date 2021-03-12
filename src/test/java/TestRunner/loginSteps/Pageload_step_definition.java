@@ -31,7 +31,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class Pageload_step_definition extends SetupClass {
-	PerformAction wait = new PerformAction();
+	PerformAction wait1 = new PerformAction();
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	 WebDriverWait wait = new WebDriverWait(driver,50);
 	Random rad = new Random();
@@ -49,7 +49,7 @@ public static String actualTitle;
 	@Then("^Click on the Login button\\.$")
 	public void click_on_Download_this_presentation_link() throws InterruptedException {
 		webelement = driver.findElement(GtmetricObject.Login_button);
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		webelement.click();
 		Thread.sleep(1000);
 	}
@@ -59,30 +59,30 @@ public static String actualTitle;
 
 		webelement = driver.findElement(GtmetricObject.email);
 		webelement.click();
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		webelement.clear();
-		//Thread.sleep(5000);
+	Thread.sleep(5000);
 		webelement.sendKeys("test147@gmail.com");
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 	}
 
 	@Then("^Insert the user Password \"([^\"]*)\"\\.$")
 	public void enter_user_password_as(String passwd) throws Throwable {
 		webelement = driver.findElement(GtmetricObject.password);
 		webelement.click();
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		webelement.clear();
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		webelement.sendKeys("Qwerty");
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 	}
 
 	@Then("^Click on Login\\.$")
 	public void click_on_Login_button() throws Throwable {
 		webelement = driver.findElement(GtmetricObject.login);
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		webelement.click();
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		Thread.sleep(2000);
 	}
 
