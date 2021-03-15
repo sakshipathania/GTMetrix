@@ -842,7 +842,7 @@ public static String actualTitle;
 
 // write get text value in excel sheet
 public void putDataInExcel(int row) throws Throwable {
-	File src = new File("C:\\Users\\Administrator\\eclipse-workspace\\loaded result\\gtmetrixloaded\\LoadTest.xlsx");
+	File src = new File("C:\\Users\\Administrator\\eclipse-workspace\\SlideteamAppp\\write.txt");
 	String cellValue[] = {location, speedtime};
 	int count = 0;
 	FileInputStream fis = new FileInputStream(src);
@@ -906,7 +906,7 @@ public void putDataInExcel(int row) throws Throwable {
 
 //Write get text in txt folder
 public void setDataFromFile(String speeed) throws Throwable {
-	File file = new File("C:\\Users\\Administrator\\.jenkins\\workspace\\Test Slideteam Loaded Time\\Write.txt");
+	File file = new File("C:\\Users\\Administrator\\.jenkins\\workspace\\GtMetrix Load Test\\SlideteamAppp\\write.txt");
 	BufferedReader br;
 	try {
 		br = new BufferedReader(new FileReader(file));
